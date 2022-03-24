@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Ajith Database</title>
+	</head>
+	<body>
+		<h1>User Management</h1>
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>CITY</th>
+			</tr>
+			{% for data in datas %}
+				<tr>
+					<td>{{data.ID}}</td>
+					<td>{{data.NAME}}</td>
+					<td>{{data.AGE}}</td>
+					<td>{{data.CITY}}</td>
+			{% endfor %}
+		</table>
+	</body>
+</html>
